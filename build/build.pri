@@ -1,5 +1,7 @@
 # Creating the applicationinfo.hpp file
 info.target = applicationinfo.hpp
-info.commands = "python  ../build/build_counter.py"
-QMAKE_EXTRA_TARGETS += info
+win32: info.commands = "python.exe ..\build\build_counter.py"
+else:  info.commands = "python  ../build/build_counter.py"
+
 PRE_TARGETDEPS += applicationinfo.hpp
+QMAKE_EXTRA_TARGETS += info

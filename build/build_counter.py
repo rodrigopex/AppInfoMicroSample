@@ -50,9 +50,6 @@ public:
 	Q_INVOKABLE QString currentPath() {{
         return QString("file://" + QDir::currentPath());
     }}
-    Q_INVOKABLE QString rawAssetsPath() {{
-        return QString(QDir::currentPath() + "/app/native/assets/");
-    }}
     Q_INVOKABLE QString homePath() {{
         return QString("file://" + QDir::homePath());
     }}

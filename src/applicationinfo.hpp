@@ -11,7 +11,7 @@
 #define APPLICATION_VERSION_MAJOR 0
 #define APPLICATION_VERSION_MINOR 1
 #define APPLICATION_VERSION_MAINTENANCE 0
-#define APPLICATION_VERSION_BUILD 8
+#define APPLICATION_VERSION_BUILD 3
 
 class ApplicationInfo: public QObject {
     Q_OBJECT
@@ -19,13 +19,10 @@ public:
     ApplicationInfo(QObject * parent = 0): QObject(parent) {
     }
 	Q_INVOKABLE QString version() {
-	    return QString("0.1.0.8");
+	    return QString("0.1.0.3");
 	}
 	Q_INVOKABLE QString currentPath() {
         return QString("file://" + QDir::currentPath());
-    }
-    Q_INVOKABLE QString rawAssetsPath() {
-        return QString(QDir::currentPath() + "/app/native/assets/");
     }
     Q_INVOKABLE QString homePath() {
         return QString("file://" + QDir::homePath());

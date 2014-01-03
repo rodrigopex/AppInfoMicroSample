@@ -104,26 +104,5 @@ Page {
         Divider {
 
         }
-        Container {
-            leftPadding: 20
-            Container {
-                Label {
-                    verticalAlignment: VerticalAlignment.Center
-                    text: "Raw assets path"
-                }
-            }
-            Container {
-
-                Label {
-                    text: appInfo.rawAssetsPath()
-                    multiline: true
-                    textStyle.fontSize: FontSize.XXSmall
-                }
-            }
-        }
-        Divider {
-
-        }
-
     }
 }
